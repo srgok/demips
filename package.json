@@ -1,0 +1,20 @@
+{
+  "name": "demips",
+  "version": "0.0.1",
+  "description": "MIPS Disassembler",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "mips",
+    "elf",
+    "ps2"
+  ],
+  "author": "Serge Okon",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^7.1.11"
+  }
+}

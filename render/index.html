@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>demips</title>
+  </head>
+  <body>
+
+    <header>
+      demips!
+    </header>
+
+    <main>
+      <table class="deasm-table">
+        <tbody class="deasm-table-tbody">
+          <tr class="deasm-table-header-row">
+            <th>Address</th><th>Value</th><th>Label</th><th>Converted</th><th>Comment</th>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      We are using Node.js <span id="node-version"></span>,
+      Chromium <span id="chrome-version"></span>,
+      and Electron <span id="electron-version"></span>.
+    </footer>
+
+
+    <template id="deasm-table-row-template">
+      <tr>
+        <td class="deasm-table-address"></td>
+        <td class="deasm-table-value"></td>
+        <td class="deasm-table-label"></td>
+        <td class="deasm-table-converted"></td>
+        <td class="deasm-table-comment"></td>
+      </tr>
+    </template>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
